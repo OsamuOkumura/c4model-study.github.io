@@ -1,17 +1,5 @@
-<!DOCTYPE html><header>
-    <div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
-        <img src="aka-c4model.jpg" alt="C4モデル研究会ロゴ" style="width: 120px; height: 120px; border-radius: 50%; background: white; padding: 10px;">
-        
-    </div>
-</header>
-<html lang="ja"><header>
-    <div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
-        <img src="aka-c4model.jpg"
-            <h1>C4モデル研究会</h1>
-            <p>次世代AIワークフロー構築手法の研究と実践</p>
-        </div>
-    </div>
-</header>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +20,22 @@
             color: white;
             padding: 80px 20px;
             text-align: center;
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        header .logo-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: white;
+            padding: 10px;
+            object-fit: contain;
         }
         header h1 {
             font-size: 2.8em;
@@ -102,6 +106,7 @@
         }
         @media (max-width: 768px) {
             header h1 { font-size: 2em; }
+            header .logo-container img { width: 80px; height: 80px; }
             .section { padding: 30px 20px; }
             h2 { font-size: 1.5em; }
         }
@@ -109,6 +114,9 @@
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="aka-c4model.jpg" alt="C4モデル研究会ロゴ">
+        </div>
         <h1>C4モデル研究会</h1>
         <p>次世代AIワークフロー構築手法の研究と実践</p>
     </header>
@@ -123,7 +131,8 @@
                 実務に活かせる実践的な知見を共有しています。
             </p>
         </div>
- <div class="section">
+
+        <div class="section">
             <h2>動画コンテンツ</h2>
             <div class="book">
                 <h3>📺 俳句鑑賞入門 × C4モデル事例研究</h3>
@@ -148,6 +157,7 @@
                 </a>
             </div>
         </div>
+
         <div class="section">
             <h2>出版物</h2>
             <div class="book">
